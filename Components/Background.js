@@ -1,23 +1,24 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { StyleSheet, View, Image } from 'react-native';
 
-const Background = () => {
+
+export default function background() {
   return (
     <View>
-      <Text>Background</Text>
+      <Image
+        style={styles.stretch}
+        source={require('../assets/background.png')}
+      />
     </View>
-  )
+  );
 }
 
-export default Background
 
-/*
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'red',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
-  */
+  stretch: {
+    resizeMode: 'stretch',
+    borderRadius: 30,
+    display:'flex',
+
+  }
+});
