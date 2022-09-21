@@ -1,7 +1,6 @@
 
-import { View,StyleSheet } from 'react-native'
-import React from 'react'
-import { StatusBar } from 'expo-status-bar';
+import { View,StyleSheet } from 'react-native';
+import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Stay from './Screens/Stay';
@@ -20,14 +19,15 @@ export default function App() {
 
 
   return (
-    <View style={{ flex: 1 }}>
-      <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation />
+    <View style={{ flex: 1}}>
+      <SvgXml xml={Background} height='800'  width={'400'} style={styles.AppSvg}></SvgXml>
+      <Navigation/>
     </View>
   )
 
 }
-
+/*
+*/
 
 const Navigation = () => {
 
