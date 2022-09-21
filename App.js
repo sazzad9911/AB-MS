@@ -21,12 +21,12 @@ export default function App() {
   return (
     <View style={{ flex: 1}}>
       <SvgXml xml={Background} height='800'  width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Home/>
     </View>
   )
 
 }
-/*
+/*<Navigation />
 */
 
 const Navigation = () => {

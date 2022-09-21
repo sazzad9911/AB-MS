@@ -12,8 +12,10 @@ const Home = () => {
       <View style={styles.search}>
 
         <Image source={ima} style={{
-          height: 40,
-          width: 40
+          height: 30,
+          width: 30,
+          margin:5
+          
         }}></Image>
         <View style={{
           margin: 5
