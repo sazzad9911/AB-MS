@@ -10,6 +10,7 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
+import Card from './Components/Card';
 
 
 const Stack = createNativeStackNavigator();
@@ -20,7 +21,7 @@ export default function App() {
 
   return (
     <View style={{ flex: 1}}>
-      <SvgXml xml={Background} height='800'  width={'400'} style={styles.AppSvg}></SvgXml>
+      <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
       <Home/>
     </View>
   )
