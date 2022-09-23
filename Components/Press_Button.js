@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     margin:10,
-    shadowColor: '#171717',
-    shadowOffset: {width: 2, height: 4},
-    shadowOpacity:0.2,
-    shadowRadius: 3
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 3, },
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    elevation: 15,
   },
   prbutext:{
     color:'black',

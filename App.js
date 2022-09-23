@@ -1,6 +1,6 @@
 
-import { View,StyleSheet } from 'react-native'
-import React from 'react'
+import { View,StyleSheet } from 'react-native';
+import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Stay from './Screens/Stay';
@@ -10,6 +10,7 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
+import Card from './Components/Card';
 
 
 const Stack = createNativeStackNavigator();
@@ -18,16 +19,16 @@ const Stack = createNativeStackNavigator();
 export default function App() {
 
 
-
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1}}>
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation />
+      <Home/>
     </View>
   )
 
 }
-
+/*<Navigation />
+*/
 
 const Navigation = () => {
 
