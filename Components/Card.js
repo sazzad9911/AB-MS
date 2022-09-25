@@ -1,6 +1,8 @@
-import { View,StyleSheet, Text,Dimensions,TextInput} from 'react-native'
+import { View,StyleSheet, Text,Dimensions,TextInput, Image,TouchableOpacity} from 'react-native'
 import React from 'react';
 import Press_Button from './Press_Button';
+import Clander from '../assets/clander-removebg-preview.png';
+import Seat from '../assets/seat-top-view-removebg-preview.png';
 
 
 const Card = () => {
@@ -22,7 +24,7 @@ const Card = () => {
           marginLeft: 5
         }}>To</Text>
         <View style={styles.homeFrom}>
-          <TextInput placeholder='From Address'></TextInput>
+          <TextInput placeholder='To Address'></TextInput>
         </View>
       </View>
       <View style={{ marginTop: '-5%' }}>
@@ -31,16 +33,31 @@ const Card = () => {
           marginTop: 25
         }}>Date of Journey</Text>
         <View style={styles.homeFrom}>
-          <TextInput placeholder='From Address'></TextInput>
+          <TextInput placeholder='Date of Journey'></TextInput>
+          <TouchableOpacity>
+          <Image source={Clander} style={{
+             height:20,
+            width:15,
+            marginLeft:'90%'
+            }}></Image>
+            </TouchableOpacity>
         </View>
       </View>
       <View style={{ marginTop: '-5%' }}>
         <Text style={{
           marginLeft: 5,
-          marginTop: 25
+          marginTop: 25,
+          flexDirection:'row',
         }}>Choose Seat</Text>
         <View style={styles.homeFrom}>
-          <TextInput placeholder='From Address'></TextInput>
+          <TextInput placeholder='Choose Seat'></TextInput>
+          <TouchableOpacity>
+          <Image source={Seat} style={{
+            height:20,
+            width:15,
+            marginLeft:'90%'  
+            }}></Image>
+            </TouchableOpacity>
         </View>
         <View style={styles.Submit}>
           <Press_Button title='Submit' />
