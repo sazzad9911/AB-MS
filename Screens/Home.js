@@ -1,10 +1,10 @@
-import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native'
+import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-import img from '../assets/list-symbol-of-three-items-with-dots.png'
+import img from '../assets/list-symbol-of-three-items-with-dots.png';
 import ima from '../assets/search.png';
 import bus from '../assets/buss.webp';
-import buss from '../assets/DIU Transport (4).jpg'
-
+import ook from '../assets/sagor.jpg';
+//assets\DIU Transport (4).jpg
 
 const Home = (navigation) => {
   return (
@@ -47,21 +47,79 @@ const Home = (navigation) => {
           <Text style={styles.busservice}>Bus Service</Text>
         </View>
       </View>
+      <View style={{ flex: 1 }}>
+        <ScrollView >
 
-      <View>
-        <Image source={bus} style={{
-          height: 200,
-          width: 300,
-          borderRadius: 10,
-          shadowColor: "#000",
-          shadowOffset: { width: 0, height: 3, },
-          shadowOpacity: 0.15,
-          shadowRadius: 5,
-          elevation: 15,
+          <TouchableOpacity>
 
-        }}></Image>
+            <Image source={ook} style={{
+              height: 200,
+              width: 300,
+              borderRadius: 10,
+              shadowColor: "#000",
+              shadowOffset: { width: 0, height: 3, },
+              shadowOpacity: 0.15,
+              shadowRadius: 5,
+              elevation: 15,
+
+            }}></Image>
+          </TouchableOpacity>
+          <Image source={bus} style={{
+            height: 200,
+            width: 300,
+            marginTop: '3%',
+            borderRadius: 10,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 3, },
+            shadowOpacity: 0.15,
+            shadowRadius: 5,
+            elevation: 15,
+
+          }}></Image>
+
+
+          <TouchableOpacity>
+
+            <Image source={ook} style={{
+              height: 200,
+              width: 300,
+              borderRadius: 10,
+              shadowColor: "#000",
+              shadowOffset: { width: 0, height: 3, },
+              shadowOpacity: 0.15,
+              shadowRadius: 5,
+              elevation: 15,
+
+            }}></Image>
+          </TouchableOpacity>
+          <Image source={bus} style={{
+            height: 200,
+            width: 300,
+            marginTop: '3%',
+            borderRadius: 10,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 3, },
+            shadowOpacity: 0.15,
+            shadowRadius: 5,
+            elevation: 15,
+
+          }}></Image>
+
+          <Image source={bus} style={{
+            height: 200,
+            width: 300,
+            marginTop: '3%',
+            borderRadius: 10,
+            shadowColor: "#000",
+            shadowOffset: { width: 0, height: 3, },
+            shadowOpacity: 0.15,
+            shadowRadius: 5,
+            elevation: 15,
+
+          }}></Image>
+
+        </ScrollView>
       </View>
- 
     </View>
 
 
@@ -112,6 +170,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 20,
   },
- 
+
 
 });
