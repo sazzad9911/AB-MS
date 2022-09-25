@@ -2,6 +2,8 @@ import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet,
 import React from 'react';
 import img from '../assets/list-symbol-of-three-items-with-dots.png'
 import ima from '../assets/search.png';
+import bus from '../assets/buss.webp';
+import buss from '../assets/DIU Transport (4).jpg'
 
 
 const Home = (navigation) => {
@@ -33,7 +35,6 @@ const Home = (navigation) => {
             </View>
           </View>
         </View>
-
         <View style={styles.homeBox}>
 
           <TouchableOpacity>
@@ -46,6 +47,21 @@ const Home = (navigation) => {
           <Text style={styles.busservice}>Bus Service</Text>
         </View>
       </View>
+
+      <View>
+        <Image source={bus} style={{
+          height: 200,
+          width: 300,
+          borderRadius: 10,
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 3, },
+          shadowOpacity: 0.15,
+          shadowRadius: 5,
+          elevation: 15,
+
+        }}></Image>
+      </View>
+ 
     </View>
 
 
@@ -96,5 +112,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 20,
   },
-  
+ 
+
 });
