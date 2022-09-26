@@ -8,10 +8,14 @@ import img from '../assets/list-symbol-of-three-items-with-dots.png';
 import ima from '../assets/search.png';
 import bus from '../assets/buss.webp';
 import ook from '../assets/sagor.jpg';
+import Drawer from '../Components/Drawerbar';
 
 //assets\DIU Transport (4).jpg
 
-const Home = (navigation) => {
+
+
+
+const Home = ({navigation, onPress }) => {
   return (
 
 
@@ -43,7 +47,7 @@ const Home = (navigation) => {
         </View>
         <View style={styles.homeBox}>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
             <Image source={img} style={{
               height: 20,
               width: 20,
@@ -186,6 +190,5 @@ const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: 'pink',
   },
-
 
 });

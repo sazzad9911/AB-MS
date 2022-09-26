@@ -20,9 +20,9 @@ export default function App() {
 
 
   return (
-    <View style={{ flex: 1}}>
+    <View style={{ flex: 1 }}>
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Navigation />
     </View>
   )
 
@@ -41,10 +41,20 @@ const Navigation = () => {
     },
   };
 
+  /* 
+  Bootome bar upore thakbe......
+  
+  <Stack.Screen options={{
+            headerShown: false
+          }} name="Dashboard" component={Bottombar} />
+  
+   */
 
   return (
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
+
+
         <Stack.Screen options={{
           header: (props) => <Header {...props} />
         }} name="Stay Screen" component={Stay} />
@@ -61,6 +71,6 @@ const Navigation = () => {
 }
 const styles = StyleSheet.create({
   AppSvg: {
-    position:'absolute'
+    position: 'absolute'
   }
 });
