@@ -1,9 +1,14 @@
-import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet, Dimensions, Image, TouchableOpacity } from 'react-native';
+import {
+  View, TextInput, SafeAreaView,
+  StatusBar, Text, ScrollView, StyleSheet,
+  Dimensions, Image, TouchableOpacity
+} from 'react-native';
 import React from 'react';
 import img from '../assets/list-symbol-of-three-items-with-dots.png';
 import ima from '../assets/search.png';
 import bus from '../assets/buss.webp';
 import ook from '../assets/sagor.jpg';
+
 //assets\DIU Transport (4).jpg
 
 const Home = (navigation) => {
@@ -15,6 +20,7 @@ const Home = (navigation) => {
       alignItems: 'center',
       marginLeft: '3.5%',
       justifyContent: 'center',
+      flex:1
     }}>
 
       <View style={styles.Homemain}>
@@ -47,14 +53,27 @@ const Home = (navigation) => {
           <Text style={styles.busservice}>Bus Service</Text>
         </View>
       </View>
-      <View style={{ flex: 1 }}>
-        <ScrollView >
+      <SafeAreaView style={styles.ASafeAreaView}>
+        <ScrollView style={styles.scrollView}>
 
-          <TouchableOpacity>
+            <TouchableOpacity>
 
-            <Image source={ook} style={{
+              <Image source={ook} style={{
+                height: 200,
+                width: 300,
+                borderRadius: 10,
+                shadowColor: "#000",
+                shadowOffset: { width: 0, height: 3, },
+                shadowOpacity: 0.15,
+                shadowRadius: 5,
+                elevation: 15,
+
+              }}></Image>
+            </TouchableOpacity>
+            <Image source={bus} style={{
               height: 200,
               width: 300,
+              marginTop: '3%',
               borderRadius: 10,
               shadowColor: "#000",
               shadowOffset: { width: 0, height: 3, },
@@ -63,26 +82,27 @@ const Home = (navigation) => {
               elevation: 15,
 
             }}></Image>
-          </TouchableOpacity>
-          <Image source={bus} style={{
-            height: 200,
-            width: 300,
-            marginTop: '3%',
-            borderRadius: 10,
-            shadowColor: "#000",
-            shadowOffset: { width: 0, height: 3, },
-            shadowOpacity: 0.15,
-            shadowRadius: 5,
-            elevation: 15,
-
-          }}></Image>
 
 
-          <TouchableOpacity>
+            <TouchableOpacity>
 
-            <Image source={ook} style={{
+              <Image source={ook} style={{
+                height: 200,
+                width: 300,
+                borderRadius: 10,
+                shadowColor: "#000",
+                shadowOffset: { width: 0, height: 3, },
+                shadowOpacity: 0.15,
+                shadowRadius: 5,
+                elevation: 15,
+
+              }}></Image>
+            </TouchableOpacity>
+            <Image source={bus} style={{
               height: 200,
               width: 300,
+              marginTop: '3%',
+              marginBottom:'3%',
               borderRadius: 10,
               shadowColor: "#000",
               shadowOffset: { width: 0, height: 3, },
@@ -91,35 +111,23 @@ const Home = (navigation) => {
               elevation: 15,
 
             }}></Image>
-          </TouchableOpacity>
-          <Image source={bus} style={{
-            height: 200,
-            width: 300,
-            marginTop: '3%',
-            borderRadius: 10,
-            shadowColor: "#000",
-            shadowOffset: { width: 0, height: 3, },
-            shadowOpacity: 0.15,
-            shadowRadius: 5,
-            elevation: 15,
 
-          }}></Image>
+            <Image source={bus} style={{
+              height: 200,
+              width: 300,
+              marginTop: '3%',
+              marginBottom:'3%',
+              borderRadius: 10,
+              shadowColor: "#000",
+              shadowOffset: { width: 0, height: 3, },
+              shadowOpacity: 0.15,
+              shadowRadius: 5,
+              elevation: 15,
 
-          <Image source={bus} style={{
-            height: 200,
-            width: 300,
-            marginTop: '3%',
-            borderRadius: 10,
-            shadowColor: "#000",
-            shadowOffset: { width: 0, height: 3, },
-            shadowOpacity: 0.15,
-            shadowRadius: 5,
-            elevation: 15,
-
-          }}></Image>
+            }}></Image>
 
         </ScrollView>
-      </View>
+      </SafeAreaView>
     </View>
 
 
@@ -148,10 +156,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     paddingHorizontal: 30,
     paddingVertical: 12,
-    margin: 10,
-    marginTop: '-4%',
-    marginBottom: '8%',
+    marginTop: '-5%',
     borderRadius: 15,
+    marginBottom:'-2%',
     flexDirection: 'row',
   },
   Homemain: {
@@ -169,6 +176,15 @@ const styles = StyleSheet.create({
   busservice: {
     fontSize: 20,
     marginLeft: 20,
+  },
+  ASafeAreaView: {
+    flex: 1,
+    justifyContent:"center",
+    alignItems:"center",
+    paddingTop: StatusBar.currentHeight,
+  },
+  scrollView: {
+    backgroundColor: 'pink',
   },
 
 

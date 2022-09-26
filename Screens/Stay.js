@@ -3,14 +3,13 @@
 import React from 'react'
 import { StyleSheet, Text, View,Dimensions } from 'react-native';
 import Press_Button from '../Components/Press_Button';
-import Background from '../Components/Background';
 
 const Stay = ({ navigation }) => {
 
     return (
 
        
-            <View style={styles.container}>
+            <View style={styles.Staycont}>
                 <View style={styles.logoback}>
                 </View>
                 <Press_Button title='LogIn' onPress={() => navigation.navigate("StayScreen2")} />
@@ -24,7 +23,7 @@ const Stay = ({ navigation }) => {
 export default Stay;
 
 const styles = StyleSheet.create({
-    container: {
+    Staycont: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center'
