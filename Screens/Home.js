@@ -2,9 +2,13 @@ import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet,
 import React from 'react';
 import img from '../assets/list-symbol-of-three-items-with-dots.png'
 import ima from '../assets/search.png';
+import Drawer from '../Components/Drawerbar';
 
 
-const Home = (navigation) => {
+
+
+
+const Home = ({navigation, onPress }) => {
   return (
 
 
@@ -36,7 +40,7 @@ const Home = (navigation) => {
 
         <View style={styles.homeBox}>
 
-          <TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
             <Image source={img} style={{
               height: 20,
               width: 20,
@@ -96,5 +100,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginLeft: 20,
   },
-  
+
 });

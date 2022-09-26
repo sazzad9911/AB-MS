@@ -1,5 +1,5 @@
-
-import { View,StyleSheet } from 'react-native';
+import 'react-native-gesture-handler';
+import { View, StyleSheet } from 'react-native';
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -11,6 +11,9 @@ import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
+import Bottombar from './Components/Bottombar';
+
+
 
 
 const Stack = createNativeStackNavigator();
@@ -20,9 +23,9 @@ export default function App() {
 
 
   return (
-    <View style={{ flex: 1}}>
+    <View style={{ flex: 1 }}>
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Home/>
+      <Navigation />
     </View>
   )
 
@@ -40,11 +43,21 @@ const Navigation = () => {
       background: 'transparent'
     },
   };
-
+  
+  /* 
+  Bootome bar upore thakbe......
+  
+  <Stack.Screen options={{
+            headerShown: false
+          }} name="Dashboard" component={Bottombar} />
+  
+   */
 
   return (
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
+
+
         <Stack.Screen options={{
           header: (props) => <Header {...props} />
         }} name="Stay Screen" component={Stay} />
@@ -61,6 +74,6 @@ const Navigation = () => {
 }
 const styles = StyleSheet.create({
   AppSvg: {
-    position:'absolute'
+    position: 'absolute'
   }
 });
