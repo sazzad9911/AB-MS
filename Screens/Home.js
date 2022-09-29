@@ -36,12 +36,13 @@ const Home = () => {
               width: 30,
               margin: 5,
               marginLeft: 7
-
             }}></Image>
             <View style={{
               margin: 5
             }}>
-              <TextInput placeholder='search'></TextInput>
+              <TextInput style={{
+              width:240
+            }} placeholder='search'></TextInput>
             </View>
           </View>
         </View>
@@ -120,12 +121,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    height: height - 120,
+    height: height - 205,
     marginTop: 20,
     paddingHorizontal: 5
   },
   HomeImage: {
-    marginTop: 8,
+    marginTop: 10,
     width: width - 20,
     height: height - 500,
     borderRadius: 15,

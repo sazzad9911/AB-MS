@@ -1,5 +1,5 @@
 
-import { View,StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import React from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -52,7 +52,6 @@ const Navigation = () => {
   return (
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
-      
         <Stack.Screen options={{
           header: (props) => <Header {...props} />
         }} name="Stay Screen" component={Stay} />
@@ -60,11 +59,9 @@ const Navigation = () => {
           headerShown: false
         }} name="StayScreen2" component={Login} />
         <Stack.Screen name="Registration" component={register} />
-        
         <Stack.Screen options={{
-            headerShown: false
-          }} name="RegisterButton" component={Bottombar} />
-        
+          headerShown: false
+        }} name="RegisterButton" component={Bottombar} />
       </Stack.Navigator>
     </NavigationContainer>
   );
