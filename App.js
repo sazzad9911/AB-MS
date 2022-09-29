@@ -10,6 +10,7 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
+import Service from './Screens/Service';
 
 
 
@@ -54,7 +55,7 @@ const Navigation = () => {
         <Stack.Screen name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
-        }} name="RegisterButton" component={Home} />
+        }} name="RegisterButton" component={Service} />
       </Stack.Navigator>
     </NavigationContainer>
   );
