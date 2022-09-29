@@ -13,7 +13,7 @@ const Register = ({navigation}) => {
       <View style={styles.buttonR}>
       <Press_Button title='Ragister' onPress={() => navigation.navigate("RegisterButton")} />
       </View>
-    </View>
+    </View> 
   )
 }
 

@@ -5,7 +5,7 @@ import { StyleSheet, TouchableOpacity} from 'react-native';
 const Press_Button = ({ title, onPress}) => {
   
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress?onPress:()=>{}}>
       <View style={styles.prbutton}>
         <Text style={styles.prbutext}>{title}</Text>
       </View>

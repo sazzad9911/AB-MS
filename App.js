@@ -10,6 +10,7 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
+import Bottombar from './Components/Bottombar';
 
 
 
@@ -44,17 +45,14 @@ const Navigation = () => {
   /* 
   Bootome bar upore thakbe......
   
-  <Stack.Screen options={{
-            headerShown: false
-          }} name="Dashboard" component={Bottombar} />
+  
   
    */
 
   return (
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
-
-
+      
         <Stack.Screen options={{
           header: (props) => <Header {...props} />
         }} name="Stay Screen" component={Stay} />
@@ -62,9 +60,11 @@ const Navigation = () => {
           headerShown: false
         }} name="StayScreen2" component={Login} />
         <Stack.Screen name="Registration" component={register} />
+        
         <Stack.Screen options={{
-          headerShown: false
-        }} name="RegisterButton" component={Home} />
+            headerShown: false
+          }} name="RegisterButton" component={Bottombar} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
