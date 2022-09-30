@@ -1,26 +1,31 @@
+
 import {
   View, TextInput, SafeAreaView,
   StatusBar, Text, ScrollView, StyleSheet,
   Dimensions, Image, TouchableOpacity
 } from 'react-native';
 import React from 'react';
-import img from '../assets/list-symbol-of-three-items-with-dots.png';
 import ima from '../assets/search.png';
 import bus from '../assets/buss.webp';
 import ook from '../assets/sagor.jpg';
 
+
+
+
 //assets\DIU Transport (4).jpg
 
-const Home = (navigation) => {
+
+
+const { height } = Dimensions.get('window')
+const Home = () => {
+
   return (
-
-
     <View style={{
       position: 'absolute',
       alignItems: 'center',
-      marginLeft: '3.5%',
+      margin: '2%',
       justifyContent: 'center',
-      flex:1
+      flex: 1
     }}>
 
       <View style={styles.Homemain}>
@@ -32,99 +37,38 @@ const Home = (navigation) => {
               width: 30,
               margin: 5,
               marginLeft: 7
-
             }}></Image>
             <View style={{
               margin: 5
             }}>
-              <TextInput placeholder='search'></TextInput>
+              <TextInput style={{
+              width:240
+            }} placeholder='search'></TextInput>
             </View>
           </View>
         </View>
         <View style={styles.homeBox}>
-
-          <TouchableOpacity>
-            <Image source={img} style={{
-              height: 20,
-              width: 20,
-              marginTop: 5
-            }}></Image>
-          </TouchableOpacity>
-          <Text style={styles.busservice}>Bus Service</Text>
+          <Text style={styles.busservice}>Bus Services</Text>
         </View>
       </View>
       <SafeAreaView style={styles.ASafeAreaView}>
         <ScrollView style={styles.scrollView}>
 
-            <TouchableOpacity>
-
-              <Image source={ook} style={{
-                height: 200,
-                width: 300,
-                borderRadius: 10,
-                shadowColor: "#000",
-                shadowOffset: { width: 0, height: 3, },
-                shadowOpacity: 0.15,
-                shadowRadius: 5,
-                elevation: 15,
-
-              }}></Image>
-            </TouchableOpacity>
-            <Image source={bus} style={{
-              height: 200,
-              width: 300,
-              marginTop: '3%',
-              borderRadius: 10,
-              shadowColor: "#000",
-              shadowOffset: { width: 0, height: 3, },
-              shadowOpacity: 0.15,
-              shadowRadius: 5,
-              elevation: 15,
-
-            }}></Image>
-
-
-            <TouchableOpacity>
-
-              <Image source={ook} style={{
-                height: 200,
-                width: 300,
-                borderRadius: 10,
-                shadowColor: "#000",
-                shadowOffset: { width: 0, height: 3, },
-                shadowOpacity: 0.15,
-                shadowRadius: 5,
-                elevation: 15,
-
-              }}></Image>
-            </TouchableOpacity>
-            <Image source={bus} style={{
-              height: 200,
-              width: 300,
-              marginTop: '3%',
-              marginBottom:'3%',
-              borderRadius: 10,
-              shadowColor: "#000",
-              shadowOffset: { width: 0, height: 3, },
-              shadowOpacity: 0.15,
-              shadowRadius: 5,
-              elevation: 15,
-
-            }}></Image>
-
-            <Image source={bus} style={{
-              height: 200,
-              width: 300,
-              marginTop: '3%',
-              marginBottom:'3%',
-              borderRadius: 10,
-              shadowColor: "#000",
-              shadowOffset: { width: 0, height: 3, },
-              shadowOpacity: 0.15,
-              shadowRadius: 5,
-              elevation: 15,
-
-            }}></Image>
+          <TouchableOpacity>
+            <Image source={ook} style={styles.HomeImage}></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={bus} style={styles.HomeImage}></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={ook} style={styles.HomeImage}></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={bus} style={styles.HomeImage}></Image>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Image source={ook} style={styles.HomeImage}></Image>
+          </TouchableOpacity>
 
         </ScrollView>
       </SafeAreaView>
@@ -136,13 +80,9 @@ const Home = (navigation) => {
 
 const { width } = Dimensions.get("screen")
 
-export default Home
+export default Home;
 
 const styles = StyleSheet.create({
-  coarea: {
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
-  },
   containerh: {
     width: width - 40,
     height: 40,
@@ -158,7 +98,9 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     marginTop: '-5%',
     borderRadius: 15,
-    marginBottom:'-2%',
+    justifyContent:'center',
+    alignItems:'center',
+    marginBottom: '-2%',
     flexDirection: 'row',
   },
   Homemain: {
@@ -174,18 +116,26 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   busservice: {
-    fontSize: 20,
-    marginLeft: 20,
+    fontSize: 25
   },
   ASafeAreaView: {
     flex: 1,
-    justifyContent:"center",
-    alignItems:"center",
-    paddingTop: StatusBar.currentHeight,
+    justifyContent: "center",
+    alignItems: "center",
+    height: height - 205,
+    marginTop: 20,
+    paddingHorizontal: 5
   },
-  scrollView: {
-    backgroundColor: 'pink',
+  HomeImage: {
+    marginTop: 10,
+    width: width - 20,
+    height: height - 500,
+    borderRadius: 15,
+    shadowColor: "black",
+    shadowOffset: { width: 0, height: 3, },
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    elevation: 15,
   },
-
 
 });

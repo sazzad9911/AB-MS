@@ -48,6 +48,7 @@ const Service = () => {
         elevation: 15,
       }}>
 
+
       </View>
 
       <View style={{
