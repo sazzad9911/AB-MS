@@ -35,11 +35,11 @@ const Service = () => {
       </View>
 
       <View style={{
-        height:250,
-        width:300,
-        backgroundColor:'white',
-        marginTop:'10%',
-        marginLeft:'8%',
+        height: 250,
+        width: 300,
+        backgroundColor: 'white',
+        marginTop: '10%',
+        marginLeft: '8%',
         borderRadius: 5,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 3, },
@@ -51,11 +51,11 @@ const Service = () => {
       </View>
 
       <View style={{
-        height:200,
-        width:300,
-        backgroundColor:'white',
-        marginTop:'10%',
-        marginLeft:'8%',
+        height: 200,
+        width: 300,
+        backgroundColor: 'white',
+        marginTop: '10%',
+        marginLeft: '8%',
         borderRadius: 5,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 3, },
@@ -63,15 +63,15 @@ const Service = () => {
         shadowRadius: 5,
         elevation: 15,
       }}>
-      <Text style={{
-        fontSize:20,
-        textAlign:'center',
-        shadowColor: "#000",
-        shadowOffset: { width: 0, height: 3, },
-        shadowOpacity: 0.15,
-        shadowRadius: 5,
-        elevation: 15,
-      }}>Layover</Text>
+        <Text style={{
+          fontSize: 20,
+          textAlign: 'center',
+          shadowColor: "#000",
+          shadowOffset: { width: 0, height: 3, },
+          shadowOpacity: 0.15,
+          shadowRadius: 5,
+          elevation: 15,
+        }}>Layover</Text>
       </View>
 
     </ScrollView>
