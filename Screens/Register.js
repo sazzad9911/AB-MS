@@ -11,7 +11,7 @@ const Register = ({navigation}) => {
       <TextInput style={styles.TextStyle} placeholder='Email'></TextInput>
       <TextInput style={styles.TextStyle} placeholder='Password'></TextInput>
       <View style={styles.buttonR}>
-      <Press_Button title='Ragister' onPress={() => navigation.navigate("RegisterButton")} />
+      <Press_Button title='Ragister' onPress={() => navigation.navigate("RegisterButton")} /> 
       </View>
     </View> 
   )
@@ -23,7 +23,6 @@ const { width } = Dimensions.get("screen")
 
 const styles = StyleSheet.create({
   containers: {
-    backgroundColor:'green',
     marginTop: '20%',
     alignItems: 'center',
     justifyContent: 'center',
