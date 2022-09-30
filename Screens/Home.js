@@ -2,7 +2,6 @@ import { View, TextInput, SafeAreaView, StatusBar, Text, ScrollView, StyleSheet,
 import React from 'react';
 import img from '../assets/list-symbol-of-three-items-with-dots.png'
 import ima from '../assets/search.png';
-import Drawer from '../Components/Drawerbar';
 
 
 
