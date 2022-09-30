@@ -9,20 +9,12 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import Service from './Screens/Service';
-=======
-=======
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
 import Bottombar from './Components/Bottombar';
 import Card from './Components/Card';
 
 
-<<<<<<< HEAD
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
-=======
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
+
 
 
 
@@ -63,20 +55,14 @@ const Navigation = () => {
         <Stack.Screen name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         }} name="RegisterButton" component={Service} />
-=======
-=======
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
+
         }} name="RegisterButton" component={Bottombar} />
          <Stack.Screen options={{
           headerShown: false,
         }} name="BuyTicket" component={Card} />
-<<<<<<< HEAD
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
-=======
->>>>>>> 1a7ba1e56fcf513b20921d8f91037a58ceb99ecf
+
       </Stack.Navigator>
     </NavigationContainer>
   );
