@@ -55,6 +55,9 @@ const Navigation = () => {
         <Stack.Screen name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
+        }} name="LogInButton" component={Bottombar} />   
+        <Stack.Screen options={{
+          headerShown: false
         }} name="RegisterButton" component={Bottombar} />
          <Stack.Screen options={{
           headerShown: false,
