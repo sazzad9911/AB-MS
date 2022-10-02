@@ -17,7 +17,7 @@ export default function Login({ navigation, onPress }) {
         <TextInput style={styles.TextStyle} placeholder='Password'></TextInput>
       </View>
       <View style={styles.buttonR}>
-        <Press_Button title='LogIn' onPress={() => navigation.navigate("StayScreen2")} />
+        <Press_Button title='LogIn' onPress={() => navigation.navigate("LogInButton")} />
       </View>
       <View style={styles.ForgoteP}>
         <TouchableOpacity onPress={onPress}>
