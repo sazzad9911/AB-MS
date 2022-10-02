@@ -9,7 +9,6 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
-import Service from './Screens/Service';
 import Card from './Components/Card';
 import Profile from './Screens/Profile';
 import Bottombar from './Components/Bottombar'
@@ -26,7 +25,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Profile/>
     </View>
   )
 }
