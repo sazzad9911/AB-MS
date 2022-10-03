@@ -8,10 +8,10 @@ const Profile = () => {
   return (
     <View>
       <View style={{
-        height: '5%',
+        height: '4%',
         width: '24%',
         backgroundColor: 'white',
-        marginLeft: '40%',
+        marginLeft: '39%',
         marginTop: '10%',
         borderRadius: 5,
         flexDirection: 'row'
@@ -33,7 +33,7 @@ const Profile = () => {
       </View>
 
       <View style={{
-        height: '20%',
+        height: '16%',
         width: '30%',
         backgroundColor: 'white',
         marginLeft: '38%',
