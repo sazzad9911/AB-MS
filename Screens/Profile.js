@@ -2,6 +2,7 @@ import { View, Text, Image, } from 'react-native'
 import React from 'react'
 import Ima from '../assets/profile.png';
 import Img from '../assets/sagor.jpg'
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Profile = () => {
   return (
@@ -50,13 +51,45 @@ const Profile = () => {
         marginTop: '5%'
       }}>Name : Md Sagor alam{"\n"} Email/Phone : sagor15-2367@diu.edu.bd{"\n"}
         Address : Pirgachha, Rangpur</Text>
-        <View style={{
-          height:'40%',
-          width:'90%',
-          backgroundColor:'white'
-        }}>
-
-        </View>
+      <View style={{
+        height: '50%',
+        width: '90%',
+        marginLeft: '4%',
+        marginTop: '5%',
+        backgroundColor: 'white',
+        borderRadius: 10,
+      }}>
+        <Text style={{
+          textDecorationLine: 'underline',
+          marginLeft: '2%'
+        }}>Old Details</Text>
+        <Text style={{
+          marginLeft: '2%',
+          marginTop: '2%',
+        }}>Last 5 ticket Details:</Text>
+        <ScrollView>
+          <Text style={{
+            marginLeft: '4%',
+            marginTop: '2%',
+          }}> 1. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
+                    <Text style={{
+            marginLeft: '4%',
+            marginTop: '2%',
+          }}> 2. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
+                    <Text style={{
+            marginLeft: '4%',
+            marginTop: '2%',
+          }}> 3. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
+                    <Text style={{
+            marginLeft: '4%',
+            marginTop: '2%',
+          }}> 4. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
+                    <Text style={{
+            marginLeft: '4%',
+            marginTop: '2%',
+          }}> 5. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
+        </ScrollView>
+      </View>
     </View>
 
 
