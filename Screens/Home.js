@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
   HomeImage: {
-    width: width - 20,
+    width: width - 30,
     height: height - 500,
     borderRadius: 15,
     shadowColor: "black",
