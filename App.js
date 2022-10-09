@@ -1,6 +1,7 @@
 
+
+import React from 'react';
 import { View, StyleSheet, StatusBar } from 'react-native';
-import React, { Profiler } from 'react';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Stay from './Screens/Stay';
@@ -10,8 +11,8 @@ import Header from './Components/Header';
 import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
-import Profile from './Screens/Profile';
-import Bottombar from './Components/Bottombar'
+import Bottombar from './Components/Bottombar';
+
 
 
 
@@ -25,7 +26,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Navigation />
     </View>
   )
 }
