@@ -10,6 +10,7 @@ import Help from '../assets/help-line.png';
 import LiveChat from '../assets/liveChat.png';
 import Privacy from '../assets/privacy.png';
 import Display from '../assets/Display.png';
+import Limit from '../assets/limitation-icon-0.jpg';
 
 
 
@@ -24,7 +25,7 @@ const Settings = () => {
       <View style={{
         height: '18%',
         width: '37%',
-        marginTop: '5%',
+       marginTop:'-2%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -51,7 +52,7 @@ const Settings = () => {
       <View style={{
         height: '27%',
         width: '52%',
-        marginTop: '-30%',
+        marginTop:'-24%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -78,7 +79,7 @@ const Settings = () => {
       <View style={{
         height: '33%',
         width: '40%',
-        marginTop: '-50%',
+       marginTop:'-41%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -105,7 +106,7 @@ const Settings = () => {
       <View style={{
         height: '38%',
         width: '40%',
-        marginTop: '-63%',
+       marginTop:'-52%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -132,7 +133,7 @@ const Settings = () => {
       <View style={{
         height: '42%',
         width: '45%',
-        marginTop: '-75%',
+       marginTop:'-62%'
       }}>
          <TouchableOpacity>
           <View style={{
@@ -159,7 +160,7 @@ const Settings = () => {
       <View style={{
         height: '45%',
         width: '40%',
-        marginTop: '-84%',
+       marginTop:'-70%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -186,7 +187,7 @@ const Settings = () => {
       <View style={{
         height: '48%',
         width: '40%',
-        marginTop: '-91%',
+       marginTop:'-75%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -213,7 +214,7 @@ const Settings = () => {
       <View style={{
         height: '51%',
         width: '40%',
-        marginTop: '-97%'
+       marginTop:'-80%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -240,7 +241,7 @@ const Settings = () => {
       <View style={{
         height: '52%',
         width: '40%',
-        marginTop: '-103%',
+        marginTop:'-87%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -267,7 +268,7 @@ const Settings = () => {
       <View style={{
         height: '52%',
         width: '40%',
-        marginTop: '-103%',
+        marginTop:'-88%'
       }}>
         <TouchableOpacity>
           <View style={{
@@ -287,6 +288,33 @@ const Settings = () => {
               <Text style={{
                 fontSize: 18
               }}>Display </Text>
+            </View>
+          </View>
+        </TouchableOpacity>
+      </View>
+      <View style={{
+        height: '52%',
+        width: '40%',
+        marginTop:'-88%'
+      }}>
+        <TouchableOpacity>
+          <View style={{
+            flexDirection: 'row',
+            borderRadius: 5,
+            backgroundColor: 'white'
+          }}>
+            <View>
+              <Image source={Limit} style={{
+                height: 20,
+                width: 20,
+                margin: 3,
+                borderRadius: 10
+              }}></Image>
+            </View>
+            <View>
+              <Text style={{
+                fontSize: 18
+              }}>Limit </Text>
             </View>
           </View>
         </TouchableOpacity>
