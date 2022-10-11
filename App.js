@@ -12,6 +12,7 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
+import Help_line from '../AB-MS/Screens/Help_line';
 
 
 
@@ -26,7 +27,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation />
+      <Help_line />
     </View>
   )
 }
