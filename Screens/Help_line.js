@@ -8,18 +8,19 @@ const Help_line = () => {
     <View style={{
       height: '100%',
       width: '100%',
-      margin: '5%',
-      padding: '2%',
+      margin: '1%',
+      padding: '1%',
       alignItems: 'center'
 
     }}>
       <View style={{
-        height: '5%',
-        width: '35%',
+        height: '6%',
+        width: '36%',
         backgroundColor: 'white',
         borderRadius: 5,
-        marginTop: '5%',
-        flexDirection: 'row'
+        marginTop: '10%',
+        flexDirection: 'row',
+
 
       }}>
         <View>
@@ -33,7 +34,7 @@ const Help_line = () => {
           <Text style={{
             fontSize: 18,
             fontWeight: 'bold',
-            margin: 4
+            marginTop:'5%'
           }}> Help Line</Text>
         </View>
       </View>
