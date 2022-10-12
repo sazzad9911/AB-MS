@@ -10,7 +10,7 @@ const Help_line = () => {
       width: '100%',
       margin: '5%',
       padding: '2%',
-      alignItems: 'center',
+      alignItems: 'center'
 
     }}>
       <View style={{
@@ -77,29 +77,29 @@ const Help_line = () => {
         </View>
         <Text style={{
           marginLeft: '20%',
-          fontSize:18
+          fontSize: 18
         }}>sagor15-2367@diu.edu.bd{"\n"}amanullah15-2447@diu.edu.bd</Text>
-      <View style={{
-        flexDirection:'row'
-      }}>
         <View style={{
-          height: 30,
-          width: 30,
-          margin: '5%',
-          borderRadius: 5,
-          backgroundColor: '#000'
+          flexDirection: 'row'
         }}>
+          <View style={{
+            height: 30,
+            width: 30,
+            margin: '5%',
+            borderRadius: 5,
+            backgroundColor: '#000'
+          }}>
 
+          </View>
+          <Text style={{
+            marginTop: '6%',
+            fontSize: 18,
+            fontWeight: 'bold'
+          }}>Phone Number :</Text>
         </View>
         <Text style={{
-          marginTop:'6%',
-          fontSize:18,
-          fontWeight:'bold'
-        }}>Phone Number :</Text>
-        </View>
-        <Text style={{
-          fontSize:18,
-          marginLeft:'20%'
+          fontSize: 18,
+          marginLeft: '20%'
         }}>O1767211103</Text>
       </View>
 
