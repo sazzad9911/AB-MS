@@ -15,6 +15,7 @@ import Bottombar from './Components/Bottombar';
 import Help_line from '../AB-MS/Screens/Help_line';
 import About from './Screens/About';
 import Delete from './Screens/Delete';
+import Verify from './Screens/Verify';
 
 
 
