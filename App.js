@@ -10,7 +10,16 @@ import Header from './Components/Header';
 import Background from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Bottombar from './Components/Bottombar';
+<<<<<<< Updated upstream
 import Card from './Components/Card';
+=======
+import Help_line from '../AB-MS/Screens/Help_line';
+import About from './Screens/About';
+import Delete from './Screens/Delete';
+import Verify from './Screens/Verify';
+import Thanks from './Screens/Thanks';
+
+>>>>>>> Stashed changes
 
 
 
@@ -24,7 +33,11 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
+<<<<<<< Updated upstream
       <Navigation />
+=======
+      <Thanks/>
+>>>>>>> Stashed changes
     </View>
   )
 }
