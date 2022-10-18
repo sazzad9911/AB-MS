@@ -8,7 +8,7 @@ import Stay from './Screens/Stay';
 import Login from './Screens/Login';
 import register from './Screens/Register';
 import Header from './Components/Header';
-import Background from './Components/Background';
+import {Background} from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
