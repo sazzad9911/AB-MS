@@ -25,7 +25,7 @@ const Home = () => {
       alignItems: 'center',
       margin: '2%',
       justifyContent: 'center',
-      flex: 1
+      flex: 1,
     }}>
 
       <View style={styles.Homemain}>
@@ -52,7 +52,7 @@ const Home = () => {
         </View>
       </View>
       <SafeAreaView style={styles.ASafeAreaView}>
-        <ScrollView style={styles.scrollView}>
+        <ScrollView>
 
           <TouchableOpacity>
             <Image source={ook} style={styles.HomeImage}></Image>
@@ -124,11 +124,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: height - 205,
     marginTop: 20,
-    paddingHorizontal: 5
+    paddingHorizontal: 5,
   },
   HomeImage: {
-    marginTop: 10,
-    width: width - 20,
+    width: width - 30,
     height: height - 500,
     borderRadius: 15,
     shadowColor: "black",
@@ -136,6 +135,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 5,
     elevation: 15,
+    marginBottom:'2%'
   },
 
 });

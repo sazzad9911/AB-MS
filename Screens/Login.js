@@ -17,7 +17,7 @@ export default function Login({ navigation, onPress }) {
         <TextInput style={styles.TextStyle} placeholder='Password'></TextInput>
       </View>
       <View style={styles.buttonR}>
-        <Press_Button title='LogIn' onPress={() => navigation.navigate("StayScreen2")} />
+        <Press_Button title='LogIn' onPress={() => navigation.navigate("LogInButton")} />
       </View>
       <View style={styles.ForgoteP}>
         <TouchableOpacity onPress={onPress}>
@@ -62,14 +62,14 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 3, height: 3, },
     shadowOpacity: 0.15,
     shadowRadius: 5,
-    elevation: 10,
+    elevation: 10
   },
   under: {
     width: 136,
     height: 2,
     backgroundColor: '#fff',
     marginTop: 2,
-    marginLeft: -5,
+    marginLeft: -5
   },
   ForgoteP: {
     marginTop: '35%',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 3, height: 3, },
     shadowOpacity: 15,
     shadowRadius: 5,
-    elevation: 15,
+    elevation: 15
   }
 }
 )

@@ -1,6 +1,7 @@
 
-import { View, StyleSheet, StatusBar } from 'react-native';
+
 import React from 'react';
+import { View, StyleSheet, StatusBar } from 'react-native';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Stay from './Screens/Stay';
@@ -9,8 +10,10 @@ import register from './Screens/Register';
 import Header from './Components/Header';
 import {Background} from './Components/Background';
 import { SvgXml } from 'react-native-svg';
-import Bottombar from './Components/Bottombar';
 import Card from './Components/Card';
+import Bottombar from './Components/Bottombar';
+
+
 
 
 
@@ -24,7 +27,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation />
+      <Navigation/>
     </View>
   )
 }
@@ -53,10 +56,14 @@ const Navigation = () => {
         <Stack.Screen name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
+        }} name="LogInButton" component={Bottombar} />   
+        <Stack.Screen options={{
+          headerShown: false
         }} name="RegisterButton" component={Bottombar} />
          <Stack.Screen options={{
           headerShown: false,
         }} name="BuyTicket" component={Card} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -2,7 +2,7 @@ import { View, Text, TextInput, Dimensions, StyleSheet } from 'react-native'
 import React from 'react';
 import Press_Button from '../Components/Press_Button';
 
-const Register = ({navigation}) => {
+const Register = ({ navigation }) => {
   return (
     <View style={styles.containers}>
       <TextInput style={styles.TextStyle} placeholder='Fast Name'></TextInput>
@@ -11,9 +11,9 @@ const Register = ({navigation}) => {
       <TextInput style={styles.TextStyle} placeholder='Email'></TextInput>
       <TextInput style={styles.TextStyle} placeholder='Password'></TextInput>
       <View style={styles.buttonR}>
-      <Press_Button title='Ragister' onPress={() => navigation.navigate("RegisterButton")} /> 
+        <Press_Button title='Ragister' onPress={() => navigation.navigate("RegisterButton")} />
       </View>
-    </View> 
+    </View>
   )
 }
 
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     marginTop: '20%',
     alignItems: 'center',
     justifyContent: 'center',
-    padding:'15%'
+    padding: '15%'
   },
   TextStyle: {
     width: width - 50,
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5
 
   },
-  buttonR:{
-    marginTop:'20%'
+  buttonR: {
+    marginTop: '20%'
   }
 });
