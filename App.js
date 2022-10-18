@@ -12,10 +12,7 @@ import {Background} from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Help_line from '../AB-MS/Screens/Help_line';
-import About from './Screens/About';
-import Delete from './Screens/Delete';
-import Verify from './Screens/Verify';
+
 
 
 
