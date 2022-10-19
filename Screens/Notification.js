@@ -50,7 +50,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
@@ -85,7 +84,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
@@ -125,7 +123,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
@@ -165,7 +162,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
@@ -205,7 +201,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
@@ -284,7 +279,6 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-
                     <View style={{
                         margin: '2%',
                         backgroundColor: 'white',
