@@ -13,6 +13,7 @@ import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
 import Thanks from './Screens/Thanks';
+import Notification from '../AB-MS/Screens/Notification';
 
 
 
