@@ -8,12 +8,11 @@ import Stay from './Screens/Stay';
 import Login from './Screens/Login';
 import register from './Screens/Register';
 import Header from './Components/Header';
-import {Background} from './Components/Background';
+import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Thanks from './Screens/Thanks';
-import Notification from '../AB-MS/Screens/Notification';
+import Notification from './Screens/Notification';
 
 
 
@@ -28,7 +27,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Navigation />
     </View>
   )
 }
@@ -57,14 +56,16 @@ const Navigation = () => {
         <Stack.Screen name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
-        }} name="LogInButton" component={Bottombar} />   
+        }} name="LogInButton" component={Bottombar} />
         <Stack.Screen options={{
           headerShown: false
         }} name="RegisterButton" component={Bottombar} />
-         <Stack.Screen options={{
+        <Stack.Screen options={{
           headerShown: false,
         }} name="BuyTicket" component={Card} />
-
+        <Stack.Screen options={{
+          headerShown: false,
+        }} name="Notificatione" component={Notification} />
       </Stack.Navigator>
     </NavigationContainer>
   );

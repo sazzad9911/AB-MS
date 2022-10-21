@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Button, ScrollView } from 'react-native'
+import { Text, View, Button, ScrollView, StyleSheet, Dimensions } from 'react-native'
 
 export class Notification extends Component {
     render() {
@@ -7,19 +7,11 @@ export class Notification extends Component {
             <View style={{
                 height: '100%',
                 width: '100%',
-                marginTop: '10%',
-                alignItems: 'center'
+                marginTop: '20%',
+                marginLeft: '5%'
             }}>
                 <ScrollView>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
+                    <View style={styles.Notificationbody}>
                         <View style={{
                             flexDirection: 'row',
                             margin: '2%'
@@ -30,35 +22,26 @@ export class Notification extends Component {
                             }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
                         </View>
                         <View style={{
-                            flexDirection: 'row'
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
                         }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>01/10/2022</Text>
-                            </View>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
                             <View style={{
                                 marginLeft: '45%'
                             }}>
                                 <Text style={{
                                     textAlign: 'center',
                                     fontSize: 18
-                                }}>1 hours</Text>
+                                }}>5 days</Text>
                             </View>
                         </View>
                     </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
+                    <View style={styles.Notificationbody}>
                         <View style={{
                             flexDirection: 'row',
                             margin: '2%'
@@ -70,7 +53,8 @@ export class Notification extends Component {
                         </View>
                         <View style={{
                             flexDirection: 'row',
-                            margin: '2%'
+                            margin: '2%',
+                            marginBottom: '3%'
                         }}>
                             <View style={{
                                 marginLeft: '2%'
@@ -84,18 +68,11 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
+                    <View style={styles.Notificationbody}>
                         <View style={{
                             flexDirection: 'row',
-                            margin: '2%'
+                            margin: '2%',
+                            marginBottom: '2%'
                         }}>
                             <Text style={{
                                 marginTop: '2%',
@@ -103,172 +80,15 @@ export class Notification extends Component {
                             }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
                         </View>
                         <View style={{
-                            flexDirection: 'row'
-                        }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>01/10/2022</Text>
-                            </View>
-                            <View style={{
-                                marginLeft: '45%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>15 hours</Text>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
-                        <View style={{
                             flexDirection: 'row',
-                            margin: '2%'
+                            marginLeft: '2%',
+                            marginBottom: '2%'
                         }}>
                             <Text style={{
-                                marginTop: '2%',
-                                fontSize: 16
-                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
-                        </View>
-                        <View style={{
-                            flexDirection: 'row'
-                        }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>08/10/2022</Text>
-                            </View>
-                            <View style={{
-                                marginLeft: '45%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>22 hours</Text>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
-                        <View style={{
-                            flexDirection: 'row',
-                            margin: '2%'
-                        }}>
-                            <Text style={{
-                                marginTop: '2%',
-                                fontSize: 16
-                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
-                        </View>
-                        <View style={{
-                            flexDirection: 'row'
-                        }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>01/10/2022</Text>
-                            </View>
-                            <View style={{
-                                marginLeft: '45%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>1 days</Text>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
-                        <View style={{
-                            flexDirection: 'row',
-                            margin: '2%'
-                        }}>
-                            <Text style={{
-                                marginTop: '2%',
-                                fontSize: 16
-                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
-                        </View>
-                        <View style={{
-                            flexDirection: 'row'
-                        }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>20/09/2022</Text>
-                            </View>
-                            <View style={{
-                                marginLeft: '45%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>2 days</Text>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
-                        <View style={{
-                            flexDirection: 'row',
-                            margin: '2%'
-                        }}>
-                            <Text style={{
-                                marginTop: '2%',
-                                fontSize: 16
-                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
-                        </View>
-                        <View style={{
-                            flexDirection: 'row'
-                        }}>
-                            <View style={{
-                                marginLeft: '2%'
-                            }}>
-                                <Text style={{
-                                    textAlign: 'center',
-                                    fontSize: 18
-                                }}>01/08/2022</Text>
-                            </View>
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
                             <View style={{
                                 marginLeft: '45%'
                             }}>
@@ -279,15 +99,7 @@ export class Notification extends Component {
                             </View>
                         </View>
                     </View>
-                    <View style={{
-                        margin: '2%',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        shadowColor: '#000',
-                        shadowOffset: { width: 0, height: 3 },
-                        shadowOpacity: 0.15,
-                        elevation: 5
-                    }}>
+                    <View style={styles.Notificationbody}>
                         <View style={{
                             flexDirection: 'row',
                             margin: '2%'
@@ -298,16 +110,134 @@ export class Notification extends Component {
                             }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
                         </View>
                         <View style={{
-                            flexDirection: 'row'
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
                         }}>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
                             <View style={{
-                                marginLeft: '2%'
+                                marginLeft: '45%'
                             }}>
                                 <Text style={{
                                     textAlign: 'center',
                                     fontSize: 18
-                                }}>20/11/2022</Text>
+                                }}>5 days</Text>
                             </View>
+                        </View>
+                    </View>
+                    <View style={styles.Notificationbody}>
+                        <View style={{
+                            flexDirection: 'row',
+                            margin: '2%'
+                        }}>
+                            <Text style={{
+                                marginTop: '2%',
+                                fontSize: 16
+                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
+                        </View>
+                        <View style={{
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
+                        }}>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
+                            <View style={{
+                                marginLeft: '45%'
+                            }}>
+                                <Text style={{
+                                    textAlign: 'center',
+                                    fontSize: 18
+                                }}>5 days</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.Notificationbody}>
+                        <View style={{
+                            flexDirection: 'row',
+                            margin: '2%'
+                        }}>
+                            <Text style={{
+                                marginTop: '2%',
+                                fontSize: 16
+                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
+                        </View>
+                        <View style={{
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
+                        }}>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
+                            <View style={{
+                                marginLeft: '45%'
+                            }}>
+                                <Text style={{
+                                    textAlign: 'center',
+                                    fontSize: 18
+                                }}>5 days</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.Notificationbody}>
+                        <View style={{
+                            flexDirection: 'row',
+                            margin: '2%'
+                        }}>
+                            <Text style={{
+                                marginTop: '2%',
+                                fontSize: 16
+                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
+                        </View>
+                        <View style={{
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
+                        }}>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>01/08/2022</Text>
+
+                            <View style={{
+                                marginLeft: '45%'
+                            }}>
+                                <Text style={{
+                                    textAlign: 'center',
+                                    fontSize: 18
+                                }}>5 days</Text>
+                            </View>
+                        </View>
+                    </View>
+                    <View style={styles.Notificationbodys}>
+                        <View style={{
+                            flexDirection: 'row',
+                            margin: '2%'
+                        }}>
+                            <Text style={{
+                                marginTop: '2%',
+                                fontSize: 16
+                            }}>Bus at the moment bus stray in Bus Stand.This Please is Abdullahpur.Bus Start 9.00 PM.</Text>
+                        </View>
+                        <View style={{
+                            flexDirection: 'row',
+                            marginLeft: '2%',
+                            marginBottom: '2%'
+                        }}>
+                            <Text style={{
+                                textAlign: 'center',
+                                fontSize: 18
+                            }}>20/11/2022</Text>
                             <View style={{
                                 marginLeft: '45%'
                             }}>
@@ -325,3 +255,28 @@ export class Notification extends Component {
 }
 
 export default Notification
+
+const { width } = Dimensions.get("screen")
+
+const styles = StyleSheet.create({
+    Notificationbody: {
+        width: width - 35,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.15,
+        elevation: 5,
+        marginBottom: '5%'
+    },
+    Notificationbodys: {
+        width: width - 35,
+        backgroundColor: 'white',
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.15,
+        elevation: 5,
+        marginBottom: '30%'
+    },
+})

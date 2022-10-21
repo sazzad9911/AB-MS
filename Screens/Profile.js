@@ -24,7 +24,6 @@ const Profile = () => {
           <Image source={Ima} style={{
             height: 20,
             width: 20,
-            borderRadius: 5,
           }}></Image>
         </View>
         <View style={{
