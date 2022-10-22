@@ -7,7 +7,7 @@ export class Notification extends Component {
             <View style={{
                 height: '100%',
                 width: '100%',
-                marginTop: '20%',
+                marginTop: '15%',
                 marginLeft: '5%'
             }}>
                 <ScrollView>
@@ -232,7 +232,7 @@ export class Notification extends Component {
                         <View style={{
                             flexDirection: 'row',
                             marginLeft: '2%',
-                            marginBottom: '2%'
+                            marginBottom: '0%'
                         }}>
                             <Text style={{
                                 textAlign: 'center',
@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.15,
         elevation: 5,
-        marginBottom: '5%'
+        marginBottom: '2%'
     },
     Notificationbodys: {
         width: width - 35,
@@ -277,6 +277,6 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.15,
         elevation: 5,
-        marginBottom: '30%'
+        marginBottom: '8%'
     },
 })

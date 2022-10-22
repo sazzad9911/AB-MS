@@ -36,7 +36,9 @@ const Bottombar = () => {
       <Tab.Screen options={{ headerShown: false }} name="Home" component={Home} />
       <Tab.Screen name="Profile" component={Profile} />
       <Tab.Screen name='Service' component={Service} />
-      <Tab.Screen name='Settings' component={Settinges} />
+      <Tab.Screen options={{
+          headerShown: false,
+        }}name='Settings' component={Settinges} />
       <Tab.Screen options={{
           headerShown: false,
         }} name='SitSystem' component={Bus_sit_System} />
