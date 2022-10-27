@@ -12,7 +12,7 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Notification from './Screens/Notification';
+
 
 
 
@@ -63,9 +63,6 @@ const Navigation = () => {
         <Stack.Screen options={{
           headerShown: false,
         }} name="BuyTicket" component={Card} />
-        <Stack.Screen options={{
-          headerShown: false,
-        }} name="Notificatione" component={Notification} />
       </Stack.Navigator>
     </NavigationContainer>
   );
